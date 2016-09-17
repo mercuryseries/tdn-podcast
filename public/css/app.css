@@ -1,0 +1,119 @@
+.wrapper {
+  width: 740px;
+  max-width: 100%;
+  margin: 0 auto; }
+
+.border {
+  height: 6px;
+  border: 0;
+  background-color: #a086c4;
+  background-image: -webkit-linear-gradient(left, #a086c4 0%, #a086c4 25%, #ff9700 25%, #ff9700 50%, #f75655 50%, #f75655 75%, #00ace6 75%, #00ace6 100%, #00ace6 100%);
+  background-image: linear-gradient(to right, #a086c4 0%, #a086c4 25%, #ff9700 25%, #ff9700 50%, #f75655 50%, #f75655 75%, #00ace6 75%, #00ace6 100%, #00ace6 100%);
+  background-size: 50%; }
+
+.text-center {
+  text-align: center; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "europa", sans-serif;
+  background: url("../images/background.png");
+  padding-bottom: 2em; }
+
+.Button {
+  border: 2px solid #00ace6;
+  background: transparent;
+  outline: none;
+  padding: 1em 3.5em;
+  text-align: center;
+  border-radius: 3em;
+  color: #4c4c4c;
+  cursor: pointer;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out; }
+  .Button:hover {
+    border: 2px solid #ff9700; }
+
+.Header {
+  color: #4c4c4c;
+  text-align: center; }
+  .Header__title {
+    margin-top: 1em;
+    color: #4c4c4c;
+    text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0.3em;
+    font-size: 3em;
+    text-transform: lowercase; }
+    .Header__title a {
+      color: #4c4c4c;
+      text-decoration: none; }
+  .Header__subtitle {
+    font-size: 1.2em;
+    font-weight: 300;
+    line-height: 1.3em;
+    max-width: 80%;
+    margin: 1.5em auto; }
+  .Header__share-buttons a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #606060;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 40px;
+    border: none;
+    -webkit-transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out; }
+    .Header__share-buttons a:hover {
+      background-color: #4c4c4c; }
+
+.Podcasts {
+  list-style: none;
+  margin: 3em 0 0 0;
+  padding: 0; }
+  .Podcasts .Podcast {
+    border: 1px solid #d2d2d2;
+    border-radius: 0.3em;
+    background-color: #fff;
+    padding: 0.6em 1em;
+    margin-bottom: 2.5em;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    display: -webkit-box;
+    display: flex; }
+    .Podcasts .Podcast--highlight .Podcast__illustration img {
+      width: 150px; }
+    .Podcasts .Podcast--highlight .Podcast__description {
+      font-size: 1em; }
+    .Podcasts .Podcast:hover {
+      cursor: pointer;
+      box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 0.1); }
+    .Podcasts .Podcast__illustration {
+      margin-right: 1em; }
+      .Podcasts .Podcast__illustration img {
+        width: 100px;
+        border-radius: .3em; }
+    .Podcasts .Podcast__header time {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.7em; }
+    .Podcasts .Podcast__header h1 {
+      margin: 0.2em 0 0.5em 0;
+      font-size: 1.6em; }
+      .Podcasts .Podcast__header h1 a {
+        text-decoration: none;
+        color: #00ace6; }
+        .Podcasts .Podcast__header h1 a:hover {
+          color: #0099cd; }
+    .Podcasts .Podcast__description {
+      font-size: 0.9em;
+      line-height: 1.5em; }
+    .Podcasts .Podcast__footer a {
+      color: #00ace6; }
+      .Podcasts .Podcast__footer a:hover {
+        color: #0095c7; }
+
+/*# sourceMappingURL=app.css.map */
