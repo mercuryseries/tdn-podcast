@@ -1,6 +1,6 @@
 .wrapper {
   width: 740px;
-  max-width: 100%;
+  max-width: 98%;
   margin: 0 auto; }
 
 .border {
@@ -86,6 +86,8 @@ body {
     display: flex; }
     .Podcasts .Podcast--highlight .Podcast__illustration img {
       width: 150px; }
+    .Podcasts .Podcast--highlight .Podcast__header h1 {
+      font-size: 1.8em; }
     .Podcasts .Podcast--highlight .Podcast__description {
       font-size: 1em; }
     .Podcasts .Podcast:hover {
@@ -99,7 +101,7 @@ body {
     .Podcasts .Podcast__header time {
       font-weight: 700;
       text-transform: uppercase;
-      font-size: 0.7em; }
+      font-size: 0.8em; }
     .Podcasts .Podcast__header h1 {
       margin: 0.2em 0 0.5em 0;
       font-size: 1.6em; }
@@ -110,10 +112,26 @@ body {
           color: #0099cd; }
     .Podcasts .Podcast__description {
       font-size: 0.9em;
-      line-height: 1.5em; }
-    .Podcasts .Podcast__footer a {
-      color: #00ace6; }
-      .Podcasts .Podcast__footer a:hover {
-        color: #0095c7; }
+      line-height: 1.5em;
+      text-align: left; }
+    .Podcasts .Podcast__footer {
+      text-align: left; }
+      .Podcasts .Podcast__footer a {
+        color: #00ace6; }
+        .Podcasts .Podcast__footer a:hover {
+          color: #0095c7; }
+
+@media screen and (max-width: 480px) {
+  .Header .Header__title {
+    font-size: 2em; }
+  .Podcasts .Podcast {
+    display: block;
+    text-align: center; }
+    .Podcasts .Podcast--highlight .Podcast__header h1 {
+      font-size: 1.4em; }
+    .Podcasts .Podcast__illustration {
+      display: block; }
+    .Podcasts .Podcast__header h1 {
+      font-size: 1.2em; } }
 
 /*# sourceMappingURL=app.css.map */

@@ -12,4 +12,9 @@ class PodcastsController extends Controller
     {
         return view('podcasts.index');
     }
+
+    public function show(Podcast $podcast)
+    {
+        return view('podcasts.show');
+    }
 }

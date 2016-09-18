@@ -13,5 +13,15 @@
 
 Route::get('/', [
     'as'   => 'root_path',
+    'uses' => 'PagesController@home'
+]);
+
+Route::get('/podcasts', [
+    'as'   => 'podcasts_path',
     'uses' => 'PodcastsController@index'
+]);
+
+Route::get('/podcasts/{podcast}', [
+    'as'   => 'podcast_path',
+    'uses' => 'PodcastsController@show'
 ]);
