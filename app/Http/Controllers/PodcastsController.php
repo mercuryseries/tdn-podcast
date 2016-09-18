@@ -17,7 +17,7 @@ class PodcastsController extends Controller
 
     public function index()
     {
-        $podcasts = Podcast::published()->all();
+        $podcasts = Podcast::published()->get();
 
         return view('podcasts.index', compact('podcasts'));
     }

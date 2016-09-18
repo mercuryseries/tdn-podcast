@@ -20,9 +20,7 @@ class DownloadPodcastsController extends Controller
         }
 
         if($file_exists) {
-            return response()->download($file_path, basename($file_path), [
-                'Content-Length: '. filesize($file_path)
-            ]);
+            return response()->download($file_path, basename($file_path));
         } else {
             exit('Requested file does not exist on our server!');
         }
