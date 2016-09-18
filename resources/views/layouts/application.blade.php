@@ -6,6 +6,9 @@
 
     <meta name="viewport" content="width:device-width, initial-scale=1.0">
 
+    <!-- Favicons -->
+    @include('layouts/partials/_favicons')
+
     <!-- Normalize CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
 
@@ -25,7 +28,7 @@
 <body>
     <div class="border"></div>
 
-    @include('layouts._header')
+    @include('layouts/partials/_header')
 
     <main class="wrapper">
         @yield('content')
