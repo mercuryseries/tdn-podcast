@@ -8,19 +8,22 @@
     height: 6px;
     border: 0;
     background-color: $violet;
-    background-image: linear-gradient(
-        to right,
-        $violet 0%,
-        $violet 25%,
-        $orange 25%,
-        $orange 50%,
-        $pink 50%,
-        $pink 75%,
-        $blue 75%,
-        $blue 100%,
-        $blue 100%
-    );
-    background-size: 50%;
+
+    @media #{$mq-xs} {
+        background-image: linear-gradient(
+            to right,
+            $violet 0%,
+            $violet 25%,
+            $orange 25%,
+            $orange 50%,
+            $pink 50%,
+            $pink 75%,
+            $blue 75%,
+            $blue 100%,
+            $blue 100%
+        );
+        background-size: 50%;
+    }
 }
 
 .text_center {

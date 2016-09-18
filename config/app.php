@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Ambiance à la TDN !',
+    'name' => 'Pause café avec les TDN !',
 
     /*
     |--------------------------------------------------------------------------
