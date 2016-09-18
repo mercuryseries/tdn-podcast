@@ -4,7 +4,7 @@
     </div>
     <div class="Podcast__body">
         <header class="Podcast__header">
-            <time>{{ $podcast->published_at->format('d/m/Y') }}</time>
+            <time>{{ $podcast->published_at->format('j F Y') }}</time>
             <h1><a href="{{ route('podcasts.show', $podcast) }}">{{ $podcast->title }}</a></h1>
         </header>
         <audio controls>

@@ -19,8 +19,11 @@ class DownloadPodcastsController extends Controller
             $file_exists = Storage::disk(env('STORAGE_DISK'))->exists($file_path);
         }
 
+        $extension = strrchr(basename($file_path), '.');
+        $file_name = str_slug($podcast->title) . $extension;
+
         if($file_exists) {
-            return response()->download($file_path, basename($file_path));
+            return response()->download($file_path, $file_name);
         } else {
             exit('Requested file does not exist on our server!');
         }

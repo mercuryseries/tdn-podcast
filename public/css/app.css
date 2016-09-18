@@ -121,6 +121,7 @@ body {
   .Podcast__body {
     width: 100%; }
   .Podcast__header time {
+    color: #4c4c4c;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 0.8em; }

@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Jenssegers\Date\Date;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 
@@ -17,6 +18,11 @@ class Podcast extends Model
     public function isPublished()
     {
         return $this->published_at <= Carbon::now();
+    }
+
+    public function getPublishedAtAttribute($value)
+    {
+        return new Date($value);
     }
 
     /**
