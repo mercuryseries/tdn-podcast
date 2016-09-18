@@ -13,9 +13,9 @@ class StaticPagesControllerTest extends TestCase
      */
     public function testExample()
     {
-        $this->visit(route('root_path'))
+        $this->visit(route('home'))
             ->assertResponseOk()
-            ->seeInElement('title', 'Le Podcast des TEACHERS DU NET')
-            ->see('Le Podcast des TEACHERS DU NET');
+            ->seeInElement('title', 'Ambiance à la TDN !')
+            ->see('Ambiance à la TDN !');
     }
 }
