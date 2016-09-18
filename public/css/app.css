@@ -90,6 +90,7 @@ body {
   margin-bottom: 2.5em;
   -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
+  box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 0.1);
   display: -webkit-box;
   display: flex; }
   @media only screen and (max-width: 480px) {
@@ -105,8 +106,6 @@ body {
         font-size: 1.4em; } }
   .Podcast--highlight .Podcast__description {
     font-size: 1em; }
-  .Podcast:hover {
-    box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 0.1); }
   .Podcast__illustration {
     margin-right: 1em; }
     @media only screen and (max-width: 480px) {
