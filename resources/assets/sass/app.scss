@@ -1,8 +1,6 @@
-// Variables
-@import "variables";
-
-// Helpers
-@import "helpers";
+@import "partials/variables";
+@import "partials/helpers";
+@import "partials/media-queries";
 
 // Main Styles
 * {
@@ -43,6 +41,10 @@ body {
         margin-bottom: 0.3em;
         font-size: 3em;
         text-transform: lowercase;
+
+        @media #{$mq-xs} {
+            font-size: 2em;
+        }
 
         a {
             color: $gray;
@@ -93,6 +95,11 @@ body {
         transition: all .4s ease-in-out;
         display: flex;
 
+        @media #{$mq-xs} {
+            display: block;
+            text-align: center;
+        }
+
         &--highlight {
             .Podcast__illustration {
                 img {
@@ -102,6 +109,10 @@ body {
 
             .Podcast__header h1 {
                 font-size: 1.8em;
+
+                @media #{$mq-xs} {
+                    font-size: 1.4em;
+                }
             }
 
             .Podcast__description {
@@ -116,6 +127,10 @@ body {
 
         &__illustration {
             margin-right: 1em;
+
+            @media #{$mq-xs} {
+                display: block;
+            }
 
             img {
                 width: 100px;
@@ -133,6 +148,10 @@ body {
             h1 {
                 margin: 0.2em 0 0.5em 0;
                 font-size: 1.6em;
+
+                @media #{$mq-xs} {
+                    font-size: 1.2em;
+                }
 
                 a {
                     text-decoration: none;
@@ -161,30 +180,6 @@ body {
                     color: darken($blue, 6%);
                 }
             }
-        }
-    }
-}
-
-// Responsive
-@media screen and (max-width: 480px) {
-    .Header .Header__title {
-        font-size: 2em;
-    }
-
-    .Podcasts .Podcast {
-        display: block;
-        text-align: center;
-
-        &--highlight .Podcast__header h1 {
-            font-size: 1.4em;
-        }
-
-        &__illustration {
-            display: block;
-        }
-
-        &__header h1 {
-            font-size: 1.2em;
         }
     }
 }

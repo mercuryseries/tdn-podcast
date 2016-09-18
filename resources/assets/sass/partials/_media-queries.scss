@@ -1,0 +1,15 @@
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+
+// usage: @media #{$mq-sm}
+$mq-xs: "only screen and (max-width : " + $breakpoint-xs + ")";
+$mq-sm: "only screen and (max-width : " + $breakpoint-sm + ")";
+$mq-md: "only screen and (max-width : " + $breakpoint-md + ")";
+$mq-lg: "only screen and (max-width : " + $breakpoint-lg + ")";
+
+$mq-xs-up: "only screen and (min-width : " + $breakpoint-xs + ")";
+$mq-sm-up: "only screen and (min-width : " + $breakpoint-sm + ")";
+$mq-md-up: "only screen and (min-width : " + $breakpoint-md + ")";
+$mq-lg-up: "only screen and (min-width : " + $breakpoint-lg + ")";

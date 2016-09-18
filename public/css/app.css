@@ -46,6 +46,9 @@ body {
     margin-bottom: 0.3em;
     font-size: 3em;
     text-transform: lowercase; }
+    @media only screen and (max-width: 480px) {
+      .Header__title {
+        font-size: 2em; } }
     .Header__title a {
       color: #4c4c4c;
       text-decoration: none; }
@@ -84,10 +87,17 @@ body {
     transition: all .4s ease-in-out;
     display: -webkit-box;
     display: flex; }
+    @media only screen and (max-width: 480px) {
+      .Podcasts .Podcast {
+        display: block;
+        text-align: center; } }
     .Podcasts .Podcast--highlight .Podcast__illustration img {
       width: 150px; }
     .Podcasts .Podcast--highlight .Podcast__header h1 {
       font-size: 1.8em; }
+      @media only screen and (max-width: 480px) {
+        .Podcasts .Podcast--highlight .Podcast__header h1 {
+          font-size: 1.4em; } }
     .Podcasts .Podcast--highlight .Podcast__description {
       font-size: 1em; }
     .Podcasts .Podcast:hover {
@@ -95,6 +105,9 @@ body {
       box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 0.1); }
     .Podcasts .Podcast__illustration {
       margin-right: 1em; }
+      @media only screen and (max-width: 480px) {
+        .Podcasts .Podcast__illustration {
+          display: block; } }
       .Podcasts .Podcast__illustration img {
         width: 100px;
         border-radius: .3em; }
@@ -105,6 +118,9 @@ body {
     .Podcasts .Podcast__header h1 {
       margin: 0.2em 0 0.5em 0;
       font-size: 1.6em; }
+      @media only screen and (max-width: 480px) {
+        .Podcasts .Podcast__header h1 {
+          font-size: 1.2em; } }
       .Podcasts .Podcast__header h1 a {
         text-decoration: none;
         color: #00ace6; }
@@ -120,18 +136,5 @@ body {
         color: #00ace6; }
         .Podcasts .Podcast__footer a:hover {
           color: #0095c7; }
-
-@media screen and (max-width: 480px) {
-  .Header .Header__title {
-    font-size: 2em; }
-  .Podcasts .Podcast {
-    display: block;
-    text-align: center; }
-    .Podcasts .Podcast--highlight .Podcast__header h1 {
-      font-size: 1.4em; }
-    .Podcasts .Podcast__illustration {
-      display: block; }
-    .Podcasts .Podcast__header h1 {
-      font-size: 1.2em; } }
 
 /*# sourceMappingURL=app.css.map */
