@@ -1,6 +1,5 @@
 const elixir = require('laravel-elixir');
 
-require('laravel-elixir-vue');
 require('laravel-elixir-minify-html');
 
 /*
@@ -16,6 +15,5 @@ require('laravel-elixir-minify-html');
 
 elixir(mix => {
     mix.sass('app.scss')
-       .webpack('app.js');
-       /*.html('storage/framework/views/*', 'storage/framework/views/', {collapseWhitespace: true, removeAttributeQuotes: true, removeComments: true, minifyJS: true}); */
+       .html('storage/framework/views/*', 'storage/framework/views/', {collapseWhitespace: true, removeAttributeQuotes: true, removeComments: true, minifyJS: true});
 });

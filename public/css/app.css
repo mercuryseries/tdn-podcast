@@ -115,6 +115,8 @@ body {
     .Podcast__illustration img {
       width: 100px;
       border-radius: .3em; }
+  .Podcast__body {
+    width: 100%; }
   .Podcast__header time {
     font-weight: 700;
     text-transform: uppercase;

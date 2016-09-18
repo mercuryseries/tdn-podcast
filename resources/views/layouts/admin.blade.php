@@ -27,6 +27,7 @@
     <div class="border"></div>
 
     <main class="wrapper">
+        <p class="text_center"><a href="{{ route('home') }}">ACCUEIL</a></p>
         @yield('content')
     </main>
 </body>
