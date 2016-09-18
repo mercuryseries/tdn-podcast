@@ -20,6 +20,7 @@ return [
     'alpha_dash'           => 'The :attribute may only contain letters, numbers, and dashes.',
     'alpha_num'            => 'The :attribute may only contain letters and numbers.',
     'array'                => 'The :attribute must be an array.',
+    'audio'                => 'The :attribute must be an audio file.',
     'before'               => 'The :attribute must be a date before :date.',
     'between'              => [
         'numeric' => 'The :attribute must be between :min and :max.',

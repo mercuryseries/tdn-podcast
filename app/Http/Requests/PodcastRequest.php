@@ -32,7 +32,7 @@ class PodcastRequest extends FormRequest
         ];
 
         if($this->method() == 'POST') {
-            $rules['podcast'] = 'required|file|mimes:mpga,wav|max:5000';
+            $rules['podcast'] = 'required|audio|max:5000';
         }
 
         return $rules;
