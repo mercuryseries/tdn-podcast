@@ -11,8 +11,11 @@
   background-image: linear-gradient(to right, #a086c4 0%, #a086c4 25%, #ff9700 25%, #ff9700 50%, #f75655 50%, #f75655 75%, #00ace6 75%, #00ace6 100%, #00ace6 100%);
   background-size: 50%; }
 
-.text-center {
+.text_center {
   text-align: center; }
+
+.mt5 {
+  margin-top: 5em; }
 
 * {
   box-sizing: border-box; }
@@ -20,12 +23,13 @@
 body {
   font-family: "europa", sans-serif;
   background: url("../images/background.png");
-  padding-bottom: 2em; }
+  padding-bottom: 4em; }
 
 .Button {
   border: 2px solid #00ace6;
   background: transparent;
   outline: none;
+  text-decoration: none;
   padding: 1em 3.5em;
   text-align: center;
   border-radius: 3em;
@@ -77,64 +81,64 @@ body {
   list-style: none;
   margin: 3em 0 0 0;
   padding: 0; }
-  .Podcasts .Podcast {
-    border: 1px solid #d2d2d2;
-    border-radius: 0.3em;
-    background-color: #fff;
-    padding: 0.6em 1em;
-    margin-bottom: 2.5em;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-    display: -webkit-box;
-    display: flex; }
+
+.Podcast {
+  border: 1px solid #d2d2d2;
+  border-radius: 0.3em;
+  background-color: #fff;
+  padding: 0.6em 1em;
+  margin-bottom: 2.5em;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  display: -webkit-box;
+  display: flex; }
+  @media only screen and (max-width: 480px) {
+    .Podcast {
+      display: block;
+      text-align: center; } }
+  .Podcast--highlight .Podcast__illustration img {
+    width: 150px; }
+  .Podcast--highlight .Podcast__header h1 {
+    font-size: 1.8em; }
     @media only screen and (max-width: 480px) {
-      .Podcasts .Podcast {
-        display: block;
-        text-align: center; } }
-    .Podcasts .Podcast--highlight .Podcast__illustration img {
-      width: 150px; }
-    .Podcasts .Podcast--highlight .Podcast__header h1 {
-      font-size: 1.8em; }
-      @media only screen and (max-width: 480px) {
-        .Podcasts .Podcast--highlight .Podcast__header h1 {
-          font-size: 1.4em; } }
-    .Podcasts .Podcast--highlight .Podcast__description {
-      font-size: 1em; }
-    .Podcasts .Podcast:hover {
-      cursor: pointer;
-      box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 0.1); }
-    .Podcasts .Podcast__illustration {
-      margin-right: 1em; }
-      @media only screen and (max-width: 480px) {
-        .Podcasts .Podcast__illustration {
-          display: block; } }
-      .Podcasts .Podcast__illustration img {
-        width: 100px;
-        border-radius: .3em; }
-    .Podcasts .Podcast__header time {
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: 0.8em; }
-    .Podcasts .Podcast__header h1 {
-      margin: 0.2em 0 0.5em 0;
-      font-size: 1.6em; }
-      @media only screen and (max-width: 480px) {
-        .Podcasts .Podcast__header h1 {
-          font-size: 1.2em; } }
-      .Podcasts .Podcast__header h1 a {
-        text-decoration: none;
-        color: #00ace6; }
-        .Podcasts .Podcast__header h1 a:hover {
-          color: #0099cd; }
-    .Podcasts .Podcast__description {
-      font-size: 0.9em;
-      line-height: 1.5em;
-      text-align: left; }
-    .Podcasts .Podcast__footer {
-      text-align: left; }
-      .Podcasts .Podcast__footer a {
-        color: #00ace6; }
-        .Podcasts .Podcast__footer a:hover {
-          color: #0095c7; }
+      .Podcast--highlight .Podcast__header h1 {
+        font-size: 1.4em; } }
+  .Podcast--highlight .Podcast__description {
+    font-size: 1em; }
+  .Podcast:hover {
+    box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 0.1); }
+  .Podcast__illustration {
+    margin-right: 1em; }
+    @media only screen and (max-width: 480px) {
+      .Podcast__illustration {
+        display: block; } }
+    .Podcast__illustration img {
+      width: 100px;
+      border-radius: .3em; }
+  .Podcast__header time {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8em; }
+  .Podcast__header h1 {
+    margin: 0.2em 0 0.5em 0;
+    font-size: 1.6em; }
+    @media only screen and (max-width: 480px) {
+      .Podcast__header h1 {
+        font-size: 1.2em; } }
+    .Podcast__header h1 a {
+      text-decoration: none;
+      color: #00ace6; }
+      .Podcast__header h1 a:hover {
+        color: #0099cd; }
+  .Podcast__description {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    text-align: left; }
+  .Podcast__footer {
+    text-align: left; }
+    .Podcast__footer a {
+      color: #00ace6; }
+      .Podcast__footer a:hover {
+        color: #0095c7; }
 
 /*# sourceMappingURL=app.css.map */

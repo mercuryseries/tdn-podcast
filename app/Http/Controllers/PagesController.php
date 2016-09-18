@@ -2,14 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
 use App\Http\Requests;
+use App\Models\Podcast;
+use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
     public function home()
     {
-        return view('podcasts.index');
+        $podcasts = Podcast::published()->latest()->take(11)->get();
+
+        return view('podcasts.index', compact('podcasts'));
     }
 }

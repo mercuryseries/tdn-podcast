@@ -16,6 +16,6 @@ require('laravel-elixir-minify-html');
 
 elixir(mix => {
     mix.sass('app.scss')
-       .webpack('app.js')
-       .html('storage/framework/views/*', 'storage/framework/views/', {collapseWhitespace: true, removeAttributeQuotes: true, removeComments: true, minifyJS: true});
+       .webpack('app.js');
+       /*.html('storage/framework/views/*', 'storage/framework/views/', {collapseWhitespace: true, removeAttributeQuotes: true, removeComments: true, minifyJS: true}); */
 });

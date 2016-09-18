@@ -13,11 +13,8 @@
     <!-- Normalize CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
 
-    <!-- FontAwesome -->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-
-    <!-- Plyr -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/plyr/2.0.7/plyr.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" type="text/css" href="{{ elixir('css/app.css') }}">
@@ -29,17 +26,8 @@
 <body>
     <div class="border"></div>
 
-    @include('layouts/partials/_header')
-
     <main class="wrapper">
         @yield('content')
     </main>
-
-    <!-- Plyr -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/plyr/2.0.7/plyr.js"></script>
-    <script>plyr.setup();</script>
-
-    <script src="https://code.jquery.com/jquery.min.js"></script>
-    <script src="{{ asset('/js/larails.js') }}"></script>
 </body>
 </html>

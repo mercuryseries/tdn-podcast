@@ -12,16 +12,13 @@
 */
 
 Route::get('/', [
-    'as'   => 'root_path',
+    'as'   => 'home',
     'uses' => 'PagesController@home'
 ]);
 
-Route::get('/podcasts', [
-    'as'   => 'podcasts_path',
-    'uses' => 'PodcastsController@index'
+Route::get('/download/podcasts/{podcast}', [
+    'as' => 'podcasts.download',
+    'uses' => 'DownloadPodcastsController@show'
 ]);
 
-Route::get('/podcasts/{podcast}', [
-    'as'   => 'podcast_path',
-    'uses' => 'PodcastsController@show'
-]);
+Route::resource('podcasts', 'PodcastsController');

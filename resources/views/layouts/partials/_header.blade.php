@@ -1,6 +1,6 @@
 <header class="Header">
     <div class="wrapper">
-        <h1 class="Header__title"><a href="http://podcast.dev"><i class="fa fa-volume-up"></i> Ambiance à la TDN !</a></h1>
+        <h1 class="Header__title"><a href="{{ route('home') }}"><i class="fa fa-volume-up"></i> Ambiance à la TDN !</a></h1>
         <div class="Header__share-buttons">
             <a href="#" target="_blank"><i class="fa fa-rss"></i></a>
             <a href="https://www.youtube.com/c/teachersdunet" target="_blank"><i class="fa fa-youtube"></i></a>
